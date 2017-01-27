@@ -2,4 +2,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model Datalayer.Models.BlogEntryViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
+<div class="blogEntryWrapper">
+    <div class="blogEntry">
+        <div class="blogEntryDetails">
+            <h3>@Html.DisplayFor(Model.Title)</h3>
+            <h3>@Html.DisplayFor(Model.Category)</h3>
+            <h4>@Html.DisplayFor(Model.CreatedDate.ToString())</h4>
+        </div>
+        <div class="blogEntryContentWrapper">
+            <p class="blogEntryContent">@Html.DisplayFor(Model.Text)</p>
+            <div class="blogEntryAttachment">
+            </div>
+        </div>
+        <div class="commentSection">
+            @using (Html.BeginForm("SaveComment", "BlogEntryComment"))
+            {
+                @Html.TextBoxFor(m => m.Author)<br />
+                @Html.TextAreaFor(m => m.CommentText)<br />
+                <input type="submit" value="skicka" class="btn btn-default" />
+
+            }
+        </div>
+    </div>
+</div>

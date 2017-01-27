@@ -10,7 +10,7 @@ namespace Scrum2.Models
         public int BlogID { get; set; }
 
         public string CommentText { get; set; }
-        
-        public string Author { get; set; } 
+
+        public string Author { get; set; }
     }
 }
