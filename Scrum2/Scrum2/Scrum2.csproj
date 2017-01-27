@@ -198,11 +198,8 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\BlogEntriesController.cs" />
-<<<<<<< HEAD
     <Compile Include="Controllers\BlogEntryCommentContoller.cs" />
-=======
     <Compile Include="Controllers\CalendarController.cs" />
->>>>>>> origin/master
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -257,12 +254,9 @@
     <Content Include="Views\BlogEntries\Edit.cshtml" />
     <Content Include="Views\BlogEntries\Index.cshtml" />
     <Content Include="Views\Auth\Registration.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\BlogEntries\BlogEntry.cshtml" />
     <Content Include="Views\BlogEntries\Comments.cshtml" />
-=======
     <Content Include="Views\Calendar\Index.cshtml" />
->>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
